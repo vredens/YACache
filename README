@@ -1,0 +1,36 @@
+YACache version 1.00
+====================
+
+Yet Another Cache is a short, simple cache for your Perl programs. The
+Cache module collection already supports everything this module does, so
+why another? Because this one is a lot simpler, faster and it's not OO.
+It should be used preferably if you just want to store small structures
+or scalars.
+
+YACache is not OO, which means you don't need to initialize it and can
+access the cache from anywhere in your program.
+
+If you wish to use YACache for caching data, make sure you implement a
+cache resize using your own logic. YACache does not keep last-access or
+last-insert timestamps or any other metadata for that matter.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+No dependencies.
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2012 by J.B. Ribeiro (vredens@gmail.com)
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.12.3 or,
+at your option, any later version of Perl 5 you may have available.
